@@ -10,33 +10,73 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as KontaktRouteImport } from './routes/kontakt'
+import { Route as ONasRouteImport } from './routes/o-nas'
+import { Route as SluzbyRouteImport } from './routes/sluzby'
+import { Route as VozovyParkRouteImport } from './routes/vozovy-park'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const KontaktRoute = KontaktRouteImport.update({
+  id: '/kontakt',
+  path: '/kontakt',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ONasRoute = ONasRouteImport.update({
+  id: '/o-nas',
+  path: '/o-nas',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SluzbyRoute = SluzbyRouteImport.update({
+  id: '/sluzby',
+  path: '/sluzby',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const VozovyParkRoute = VozovyParkRouteImport.update({
+  id: '/vozovy-park',
+  path: '/vozovy-park',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/kontakt': typeof KontaktRoute
+  '/o-nas': typeof ONasRoute
+  '/sluzby': typeof SluzbyRoute
+  '/vozovy-park': typeof VozovyParkRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/kontakt': typeof KontaktRoute
+  '/o-nas': typeof ONasRoute
+  '/sluzby': typeof SluzbyRoute
+  '/vozovy-park': typeof VozovyParkRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/kontakt': typeof KontaktRoute
+  '/o-nas': typeof ONasRoute
+  '/sluzby': typeof SluzbyRoute
+  '/vozovy-park': typeof VozovyParkRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths: '/' | '/kontakt' | '/o-nas' | '/sluzby' | '/vozovy-park'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to: '/' | '/kontakt' | '/o-nas' | '/sluzby' | '/vozovy-park'
+  id: '__root__' | '/' | '/kontakt' | '/o-nas' | '/sluzby' | '/vozovy-park'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  KontaktRoute: typeof KontaktRoute
+  ONasRoute: typeof ONasRoute
+  SluzbyRoute: typeof SluzbyRoute
+  VozovyParkRoute: typeof VozovyParkRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +88,43 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/kontakt': {
+      id: '/kontakt'
+      path: '/kontakt'
+      fullPath: '/kontakt'
+      preLoaderRoute: typeof KontaktRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/o-nas': {
+      id: '/o-nas'
+      path: '/o-nas'
+      fullPath: '/o-nas'
+      preLoaderRoute: typeof ONasRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sluzby': {
+      id: '/sluzby'
+      path: '/sluzby'
+      fullPath: '/sluzby'
+      preLoaderRoute: typeof SluzbyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/vozovy-park': {
+      id: '/vozovy-park'
+      path: '/vozovy-park'
+      fullPath: '/vozovy-park'
+      preLoaderRoute: typeof VozovyParkRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  KontaktRoute: KontaktRoute,
+  ONasRoute: ONasRoute,
+  SluzbyRoute: SluzbyRoute,
+  VozovyParkRoute: VozovyParkRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
