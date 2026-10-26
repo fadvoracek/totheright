@@ -2,6 +2,7 @@ import homeDelivery from "@/assets/home-delivery.jpg";
 import parcelBoxes from "@/assets/parcel-boxes.jpg";
 import furniture from "@/assets/furniture.jpg";
 import pallets from "@/assets/pallets.jpg";
+import electronics from "@/assets/electronics.jpg";
 import vanPlech from "@/assets/van-plech.jpg";
 import vanPlachta from "@/assets/van-plachta.jpg";
 
@@ -65,8 +66,8 @@ export const services: Service[] = [
     short: "Televize, spotřebiče i IT technika v bezpečí uzavřené dodávky.",
     long: "Elektronika patří do uzavřeného a suchého prostoru. Převážíme ji v plechových dodávkách, správně ukotvenou a bez zbytečného překládání.",
     points: ["Uzavřený a suchý prostor", "Správné ukotvení", "Velké spotřebiče i TV"],
-    image: furniture,
-    imageAlt: "Krabice s televizí připravená k naložení do dodávky",
+    image: electronics,
+    imageAlt: "Televize, pračka a lednice upevněné popruhy v dodávce",
   },
   {
     slug: "paletove-zbozi",
