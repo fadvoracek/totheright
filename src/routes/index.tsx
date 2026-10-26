@@ -12,7 +12,7 @@ import {
   Truck,
 } from "lucide-react";
 
-import hero from "@/assets/hero-van.jpg";
+import heroAsset from "@/assets/hero.jpg.asset.json";
 import { CtaBand } from "@/components/site/CtaBand";
 import { Button } from "@/components/ui/button";
 import { contact, fleet, services } from "@/lib/site";
@@ -59,17 +59,17 @@ function Index() {
       {/* Hero */}
       <section className="relative isolate overflow-hidden bg-road text-road-foreground">
         <img
-          src={hero}
-          alt="Bílá dodávka ToTheRight na dálnici u Prahy při západu slunce"
+          src={heroAsset.url}
+          alt="Stříbrná dodávka Ford Transit Custom připravená k jízdě"
           width={1920}
-          height={1088}
-          className="absolute inset-0 -z-20 h-full w-full object-cover object-[70%_center]"
+          height={1080}
+          className="absolute inset-0 -z-20 h-full w-full object-cover object-[75%_center]"
         />
         <div className="bg-hero-fade absolute inset-0 -z-10" aria-hidden />
         <div className="mx-auto flex min-h-[640px] max-w-7xl flex-col justify-center px-5 py-24 lg:min-h-[720px] lg:px-8">
           <span className="eyebrow animate-rise">Autodoprava Praha · celá ČR</span>
           <h1 className="animate-slide-right mt-5 max-w-3xl text-5xl font-black leading-[0.98] sm:text-6xl lg:text-7xl">
-            Vaše zásilky vždy <span className="text-signal">správným směrem.</span>
+            Vaše zásilky vždy <span className="text-signal-ink">správným směrem.</span>
           </h1>
           <p className="animate-rise mt-6 max-w-xl text-lg leading-relaxed text-road-foreground/85">
             Jsme ToTheRight — autodoprava s plechovými a plachtovými dodávkami. Doručujeme až domů, do
@@ -86,7 +86,6 @@ function Index() {
             </Button>
           </div>
         </div>
-        <div className="lane-line" aria-hidden />
       </section>
 
       {/* Quick facts strip */}
@@ -146,13 +145,13 @@ function Index() {
                 </div>
                 <div className="flex flex-1 flex-col p-6">
                   <div className="flex items-center gap-3">
-                    <span className="grid size-10 place-items-center rounded-md bg-accent text-signal">
+                    <span className="grid size-10 place-items-center rounded-md bg-accent text-signal-ink">
                       <Icon className="size-5" />
                     </span>
                     <h3 className="text-xl font-extrabold">{s.title}</h3>
                   </div>
                   <p className="mt-3 text-muted-foreground">{s.short}</p>
-                  <span className="mt-auto flex items-center gap-1 pt-5 text-sm font-bold text-primary group-hover:text-signal">
+                  <span className="mt-auto flex items-center gap-1 pt-5 text-sm font-bold text-primary group-hover:text-signal-ink">
                     Více o službě <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
                   </span>
                 </div>
@@ -163,7 +162,7 @@ function Index() {
       </section>
 
       {/* Why us */}
-      <section className="bg-road-texture text-road-foreground">
+      <section className="bg-road-gradient text-road-foreground">
         <div className="mx-auto max-w-7xl px-5 py-24 lg:px-8">
           <span className="eyebrow">Proč ToTheRight</span>
           <h2 className="mt-3 max-w-2xl text-4xl font-black leading-tight lg:text-5xl">
@@ -172,7 +171,7 @@ function Index() {
           <div className="mt-14 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
             {reasons.map((r) => (
               <div key={r.title} className="border-l-2 border-signal pl-5">
-                <r.icon className="size-7 text-signal" />
+                <r.icon className="size-7 text-signal-ink" />
                 <h3 className="mt-4 text-xl font-extrabold">{r.title}</h3>
                 <p className="mt-2 text-road-muted">{r.text}</p>
               </div>
@@ -201,7 +200,7 @@ function Index() {
                 />
               </div>
               <div className="p-7">
-                <div className="text-sm font-bold uppercase tracking-widest text-signal">{v.tagline}</div>
+                <div className="text-sm font-bold uppercase tracking-widest text-signal-ink">{v.tagline}</div>
                 <h3 className="mt-1 text-2xl font-black">{v.name}</h3>
                 <p className="mt-3 text-muted-foreground">{v.description}</p>
                 <div className="mt-5 flex flex-wrap gap-2">
@@ -233,7 +232,7 @@ function Index() {
             {steps.map((s, i) => (
               <li key={s.n} className="relative">
                 <div className="flex items-center gap-3">
-                  <span className="font-display text-5xl font-black text-signal">{s.n}</span>
+                  <span className="font-display text-5xl font-black text-signal-ink">{s.n}</span>
                   {i < steps.length - 1 && (
                     <span className="hidden h-px flex-1 border-t-2 border-dashed border-border md:block" aria-hidden />
                   )}

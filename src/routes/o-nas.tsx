@@ -1,7 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Compass, Handshake, Leaf, Timer } from "lucide-react";
 
-import delivery from "@/assets/home-delivery.jpg";
+import aboutAsset from "@/assets/about.jpg.asset.json";
+
+const delivery = aboutAsset.url;
 import { CtaBand } from "@/components/site/CtaBand";
 import { PageHero } from "@/components/site/PageHero";
 import { company } from "@/lib/site";
@@ -43,7 +45,7 @@ function AboutPage() {
       <section className="mx-auto grid max-w-7xl items-center gap-12 px-5 py-20 lg:grid-cols-2 lg:px-8">
         <img
           src={delivery}
-          alt="Řidič ToTheRight předává zásilku zákaznici"
+          alt="Nakládka krabic do žluté dodávky"
           width={1280}
           height={960}
           loading="lazy"
@@ -73,7 +75,7 @@ function AboutPage() {
           <div className="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
             {values.map((v) => (
               <div key={v.title}>
-                <span className="grid size-12 place-items-center rounded-md bg-road text-signal">
+                <span className="grid size-12 place-items-center rounded-md bg-road text-signal-ink">
                   <v.icon className="size-6" />
                 </span>
                 <h3 className="mt-5 text-xl font-extrabold">{v.title}</h3>

@@ -59,7 +59,7 @@ export function ContactForm() {
   if (sent) {
     return (
       <div className="flex flex-col items-start gap-4 rounded-xl border border-border bg-card p-8 shadow-card">
-        <CheckCircle2 className="size-10 text-signal" />
+        <CheckCircle2 className="size-10 text-signal-ink" />
         <h3 className="text-2xl font-black">Děkujeme, zprávu máme!</h3>
         <p className="text-muted-foreground">
           Ozveme se vám co nejdříve — obvykle ještě týž pracovní den. Pokud spěcháte, zavolejte
