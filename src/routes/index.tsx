@@ -124,7 +124,7 @@ function Index() {
 
         <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           {services.map((s, i) => {
-            const Icon = serviceIcons[i];
+            const Icon = serviceIcons[i] ?? Home;
             return (
               <Link
                 key={s.slug}

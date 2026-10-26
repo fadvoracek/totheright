@@ -19,7 +19,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { contactSchema, serviceOptions, type ContactInput } from "@/lib/contact-schema";
 import { contact } from "@/lib/site";
 
-function FieldError({ message }: { message?: string }) {
+function FieldError({ message }: { message?: string | undefined }) {
   if (!message) return null;
   return <p className="mt-1.5 text-sm font-medium text-destructive">{message}</p>;
 }
@@ -108,7 +108,7 @@ export function ContactForm() {
           control={control}
           name="service"
           render={({ field }) => (
-            <Select value={field.value || undefined} onValueChange={field.onChange}>
+            <Select value={field.value ?? ""} onValueChange={field.onChange}>
               <SelectTrigger id="service" className="mt-2 h-11 w-full">
                 <SelectValue placeholder="Vyberte službu" />
               </SelectTrigger>
