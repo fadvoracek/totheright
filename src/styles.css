@@ -221,7 +221,6 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .lane-line,
   .animate-rise,
   .animate-slide-right {
     animation: none;
