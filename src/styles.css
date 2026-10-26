@@ -66,40 +66,40 @@
 
 :root {
   --radius: 0.5rem;
-  --background: oklch(0.975 0.006 85);
-  --foreground: oklch(0.2 0.05 262);
+  --background: oklch(0.975 0.012 85);
+  --foreground: oklch(0.24 0.045 40);
   --card: oklch(0.995 0.003 85);
-  --card-foreground: oklch(0.2 0.05 262);
+  --card-foreground: oklch(0.24 0.045 40);
   --popover: oklch(0.995 0.003 85);
-  --popover-foreground: oklch(0.2 0.05 262);
-  --primary: oklch(0.3 0.1 262);
+  --popover-foreground: oklch(0.24 0.045 40);
+  --primary: oklch(0.32 0.06 40);
   --primary-foreground: oklch(0.98 0.005 85);
   --secondary: oklch(0.94 0.01 85);
-  --secondary-foreground: oklch(0.25 0.07 262);
+  --secondary-foreground: oklch(0.3 0.05 40);
   --muted: oklch(0.94 0.01 85);
-  --muted-foreground: oklch(0.48 0.03 262);
-  --accent: oklch(0.95 0.04 55);
-  --accent-foreground: oklch(0.3 0.1 262);
+  --muted-foreground: oklch(0.5 0.03 45);
+  --accent: oklch(0.95 0.035 20);
+  --accent-foreground: oklch(0.32 0.06 40);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.98 0.005 85);
   --border: oklch(0.89 0.012 85);
   --input: oklch(0.86 0.014 85);
-  --ring: oklch(0.69 0.19 45);
+  --ring: oklch(0.57 0.22 27);
 
   /* Brand */
-  --signal: oklch(0.69 0.2 45);
+  --signal: oklch(0.57 0.22 27);
   --signal-foreground: oklch(0.99 0.005 85);
-  --road: oklch(0.2 0.06 262);
+  --road: oklch(0.26 0.05 40);
   --road-foreground: oklch(0.97 0.006 85);
-  --road-muted: oklch(0.72 0.03 262);
+  --road-muted: oklch(0.82 0.03 60);
   --road-line: oklch(1 0 0 / 12%);
 
-  --gradient-road: linear-gradient(115deg, oklch(0.18 0.06 262) 0%, oklch(0.27 0.1 262) 100%);
+  --gradient-road: linear-gradient(115deg, oklch(0.22 0.045 40) 0%, oklch(0.34 0.065 45) 100%);
   --gradient-hero-fade: linear-gradient(
     90deg,
-    oklch(0.16 0.06 262 / 0.95) 0%,
-    oklch(0.16 0.06 262 / 0.75) 40%,
-    oklch(0.16 0.06 262 / 0) 75%
+    oklch(0.2 0.045 40 / 0.95) 0%,
+    oklch(0.2 0.045 40 / 0.75) 40%,
+    oklch(0.2 0.045 40 / 0) 75%
   );
   --shadow-signal: 0 14px 30px -12px color-mix(in oklab, var(--signal) 60%, transparent);
   --shadow-card: 0 1px 0 oklch(0.2 0.05 262 / 4%), 0 18px 40px -24px oklch(0.2 0.05 262 / 35%);
