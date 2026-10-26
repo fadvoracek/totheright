@@ -34,7 +34,7 @@ export function SiteHeader() {
             href={contact.phoneHref}
             className="flex items-center gap-2 text-sm font-bold text-foreground"
           >
-            <Phone className="size-4 text-signal" />
+            <Phone className="size-4 text-signal-ink" />
             {contact.phone}
           </a>
           <Button asChild variant="signal">
@@ -69,7 +69,7 @@ export function SiteHeader() {
           </nav>
           <div className="mt-5 flex flex-col gap-3">
             <a href={contact.phoneHref} className="flex items-center gap-2 font-bold">
-              <Phone className="size-4 text-signal" /> {contact.phone}
+              <Phone className="size-4 text-signal-ink" /> {contact.phone}
             </a>
             <Button asChild variant="signal" size="lg">
               <Link to="/kontakt" onClick={() => setOpen(false)}>

@@ -49,7 +49,7 @@ function FleetPage() {
               />
             </div>
             <div className="flex flex-col p-8 lg:p-10">
-              <div className="text-sm font-bold uppercase tracking-widest text-signal">{v.tagline}</div>
+              <div className="text-sm font-bold uppercase tracking-widest text-signal-ink">{v.tagline}</div>
               <h2 className="mt-1 text-3xl font-black lg:text-4xl">{v.name}</h2>
               <p className="mt-4 text-muted-foreground">{v.description}</p>
 
@@ -68,7 +68,7 @@ function FleetPage() {
               <ul className="mt-3 grid grid-cols-2 gap-2">
                 {v.bestFor.map((b) => (
                   <li key={b} className="flex items-center gap-2 text-sm font-semibold">
-                    <Check className="size-4 text-signal" /> {b}
+                    <Check className="size-4 text-signal-ink" /> {b}
                   </li>
                 ))}
               </ul>

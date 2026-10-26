@@ -18,7 +18,7 @@ export function SiteFooter() {
         </div>
 
         <div>
-          <h3 className="text-sm font-bold uppercase tracking-widest text-signal">Služby</h3>
+          <h3 className="text-sm font-bold uppercase tracking-widest text-signal-ink">Služby</h3>
           <ul className="mt-4 space-y-2 text-sm text-road-muted">
             {services.map((s) => (
               <li key={s.slug}>
@@ -31,15 +31,15 @@ export function SiteFooter() {
         </div>
 
         <div>
-          <h3 className="text-sm font-bold uppercase tracking-widest text-signal">Kontakt</h3>
+          <h3 className="text-sm font-bold uppercase tracking-widest text-signal-ink">Kontakt</h3>
           <ul className="mt-4 space-y-3 text-sm">
             <li>
-              <a href={contact.phoneHref} className="flex items-center gap-2 hover:text-signal">
+              <a href={contact.phoneHref} className="flex items-center gap-2 hover:text-signal-ink">
                 <Phone className="size-4" /> {contact.phone}
               </a>
             </li>
             <li>
-              <a href={`mailto:${contact.email}`} className="flex items-center gap-2 hover:text-signal">
+              <a href={`mailto:${contact.email}`} className="flex items-center gap-2 hover:text-signal-ink">
                 <Mail className="size-4" /> {contact.email}
               </a>
             </li>
@@ -57,7 +57,7 @@ export function SiteFooter() {
         </div>
 
         <div>
-          <h3 className="text-sm font-bold uppercase tracking-widest text-signal">Firemní údaje</h3>
+          <h3 className="text-sm font-bold uppercase tracking-widest text-signal-ink">Firemní údaje</h3>
           <dl className="mt-4 space-y-1 text-sm text-road-muted">
             <dt className="font-semibold text-road-foreground">{company.name}</dt>
             <dd>IČO: {company.ico}</dd>
@@ -65,7 +65,7 @@ export function SiteFooter() {
           </dl>
           <nav className="mt-6 flex flex-wrap gap-x-5 gap-y-2 text-sm" aria-label="Patička">
             {navItems.map((item) => (
-              <Link key={item.to} to={item.to} className="hover:text-signal">
+              <Link key={item.to} to={item.to} className="hover:text-signal-ink">
                 {item.label}
               </Link>
             ))}

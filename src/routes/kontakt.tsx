@@ -48,7 +48,7 @@ function ContactPage() {
             href={`mailto:${contact.email}`}
             className="group flex items-center gap-4 rounded-xl border border-border bg-card p-6 shadow-card transition-colors hover:border-signal"
           >
-            <span className="grid size-12 place-items-center rounded-md bg-road text-signal">
+            <span className="grid size-12 place-items-center rounded-md bg-road text-signal-ink">
               <Mail className="size-5" />
             </span>
             <div>
@@ -59,7 +59,7 @@ function ContactPage() {
 
           <div className="rounded-xl border border-border bg-card p-6 shadow-card">
             <div className="flex items-start gap-4">
-              <MapPin className="mt-1 size-5 shrink-0 text-signal" />
+              <MapPin className="mt-1 size-5 shrink-0 text-signal-ink" />
               <div>
                 <div className="text-xs font-bold uppercase tracking-widest text-muted-foreground">Sídlo</div>
                 <p className="mt-1 font-semibold">
@@ -72,7 +72,7 @@ function ContactPage() {
               </div>
             </div>
             <div className="mt-5 flex items-start gap-4 border-t border-border pt-5">
-              <Building2 className="mt-1 size-5 shrink-0 text-signal" />
+              <Building2 className="mt-1 size-5 shrink-0 text-signal-ink" />
               <div className="text-sm">
                 <div className="font-bold">{company.name}</div>
                 <div className="text-muted-foreground">IČO: {company.ico}</div>

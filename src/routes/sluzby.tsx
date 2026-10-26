@@ -63,7 +63,7 @@ function ServicesPage() {
                 <ul className="mt-6 space-y-3">
                   {s.points.map((p) => (
                     <li key={p} className="flex items-center gap-3 font-semibold">
-                      <span className="grid size-6 place-items-center rounded-full bg-accent text-signal">
+                      <span className="grid size-6 place-items-center rounded-full bg-accent text-signal-ink">
                         <Check className="size-4" />
                       </span>
                       {p}
