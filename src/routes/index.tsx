@@ -163,7 +163,7 @@ function Index() {
       </section>
 
       {/* Why us */}
-      <section className="bg-road-gradient chevron-texture text-road-foreground">
+      <section className="bg-road-texture text-road-foreground">
         <div className="mx-auto max-w-7xl px-5 py-24 lg:px-8">
           <span className="eyebrow">Proč ToTheRight</span>
           <h2 className="mt-3 max-w-2xl text-4xl font-black leading-tight lg:text-5xl">

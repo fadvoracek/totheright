@@ -6,7 +6,7 @@ import { company, contact, navItems, services } from "@/lib/site";
 
 export function SiteFooter() {
   return (
-    <footer className="bg-road-gradient chevron-texture text-road-foreground">
+    <footer className="bg-road-texture text-road-foreground">
       <div className="lane-line opacity-80" aria-hidden />
       <div className="mx-auto grid max-w-7xl gap-12 px-5 py-16 lg:grid-cols-4 lg:px-8">
         <div className="lg:col-span-1">
