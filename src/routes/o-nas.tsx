@@ -45,7 +45,7 @@ function AboutPage() {
       <section className="mx-auto grid max-w-7xl items-center gap-12 px-5 py-20 lg:grid-cols-2 lg:px-8">
         <img
           src={delivery}
-          alt="Řidič ToTheRight předává zásilku zákaznici"
+          alt="Nakládka krabic do žluté dodávky"
           width={1280}
           height={960}
           loading="lazy"
