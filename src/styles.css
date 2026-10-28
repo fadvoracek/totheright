@@ -145,7 +145,7 @@
   }
 }
 
-/* Small uppercase label with a leading orange chevron */
+/* Small uppercase label */
 @utility eyebrow {
   display: inline-flex;
   align-items: center;
@@ -156,13 +156,6 @@
   letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--signal);
-  &::before {
-    content: "";
-    width: 0.6rem;
-    height: 0.75rem;
-    background: var(--signal);
-    clip-path: polygon(0 0, 45% 0, 100% 50%, 45% 100%, 0 100%, 55% 50%);
-  }
 }
 
 @utility bg-road-gradient {
@@ -181,31 +174,31 @@
   box-shadow: var(--shadow-card);
 }
 
-/* Dashed lane marking that drifts to the right */
+/* Row of signal-coloured right arrows (chevrons) that drift to the right */
 @utility lane-line {
-  height: 4px;
-  background-image: repeating-linear-gradient(
-    90deg,
-    var(--signal) 0 36px,
-    transparent 36px 64px
-  );
-  background-size: 64px 4px;
+  height: 14px;
+  background-color: var(--signal);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='14' viewBox='0 0 40 14'%3E%3Cpath d='M4 0h6l7 7-7 7H4l7-7z' fill='%23000'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='14' viewBox='0 0 40 14'%3E%3Cpath d='M4 0h6l7 7-7 7H4l7-7z' fill='%23000'/%3E%3C/svg%3E");
+  -webkit-mask-size: 40px 14px;
+  mask-size: 40px 14px;
+  -webkit-mask-repeat: repeat-x;
+  mask-repeat: repeat-x;
   animation: lane-drive 1.6s linear infinite;
 }
 
-/* Navy road gradient with a faint repeating chevron texture */
 @utility bg-road-texture {
-  background-image:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Cpath d='M14 10h8l12 14-12 14h-8l12-14z' fill='%23ffffff' fill-opacity='0.05'/%3E%3C/svg%3E"),
-    var(--gradient-road);
+  background-image: var(--gradient-road);
 }
 
 @keyframes lane-drive {
   from {
-    background-position: 0 0;
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
   }
   to {
-    background-position: 64px 0;
+    -webkit-mask-position: 40px 0;
+    mask-position: 40px 0;
   }
 }
 
