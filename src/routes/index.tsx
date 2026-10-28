@@ -66,7 +66,7 @@ function Index() {
           className="absolute inset-0 -z-20 h-full w-full object-cover object-[65%_center]"
         />
         <div className="bg-hero-fade absolute inset-0 -z-10" aria-hidden />
-        <div className="mx-auto flex min-h-[640px] max-w-7xl flex-col justify-center px-5 py-24 lg:min-h-[720px] lg:px-8">
+        <div className="mx-auto flex min-h-[520px] max-w-7xl flex-col justify-center px-5 py-14 lg:py-12 lg:py-16 lg:min-h-[620px] lg:px-8">
           <span className="eyebrow animate-rise">Autodoprava Praha · celá ČR</span>
           <h1 className="animate-slide-right mt-5 max-w-3xl text-5xl font-black leading-[0.98] sm:text-6xl lg:text-7xl">
             Vaše zásilky vždy <span className="text-signal">správným směrem.</span>
@@ -107,7 +107,7 @@ function Index() {
       </section>
 
       {/* Services */}
-      <section className="mx-auto max-w-7xl px-5 py-24 lg:px-8">
+      <section className="mx-auto max-w-7xl px-5 py-14 lg:py-12 lg:py-16 lg:px-8">
         <div className="flex flex-col justify-between gap-6 lg:flex-row lg:items-end">
           <div>
             <span className="eyebrow">Co převážíme</span>
@@ -122,7 +122,7 @@ function Index() {
           </Button>
         </div>
 
-        <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           {services.map((s, i) => {
             const Icon = serviceIcons[i] ?? Home;
             return (
@@ -164,12 +164,12 @@ function Index() {
 
       {/* Why us */}
       <section className="bg-road-texture text-road-foreground">
-        <div className="mx-auto max-w-7xl px-5 py-24 lg:px-8">
+        <div className="mx-auto max-w-7xl px-5 py-14 lg:py-12 lg:py-16 lg:px-8">
           <span className="eyebrow">Proč ToTheRight</span>
           <h2 className="mt-3 max-w-2xl text-4xl font-black leading-tight lg:text-5xl">
             Jezdíme tak, jak bychom chtěli, aby se jezdilo s našimi věcmi.
           </h2>
-          <div className="mt-14 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-10 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
             {reasons.map((r) => (
               <div key={r.title} className="border-l-2 border-signal pl-5">
                 <r.icon className="size-7 text-signal" />
@@ -182,12 +182,12 @@ function Index() {
       </section>
 
       {/* Fleet teaser */}
-      <section className="mx-auto max-w-7xl px-5 py-24 lg:px-8">
+      <section className="mx-auto max-w-7xl px-5 py-14 lg:py-12 lg:py-16 lg:px-8">
         <span className="eyebrow">Vozový park</span>
         <h2 className="mt-3 max-w-2xl text-4xl font-black leading-tight lg:text-5xl">
           Plech, skříň, nebo plachta? Vybereme správné auto.
         </h2>
-        <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {fleet.map((v) => (
             <article key={v.name} className="overflow-hidden rounded-xl border border-border bg-card shadow-card">
               <div className="bg-muted">
@@ -197,7 +197,7 @@ function Index() {
                   width={1280}
                   height={800}
                   loading="lazy"
-                  className="aspect-[16/10] w-full object-cover"
+                  className="aspect-[13/8] w-full object-contain"
                 />
               </div>
               <div className="p-7">
@@ -226,10 +226,10 @@ function Index() {
 
       {/* Process */}
       <section className="border-y border-border bg-card">
-        <div className="mx-auto max-w-7xl px-5 py-24 lg:px-8">
+        <div className="mx-auto max-w-7xl px-5 py-14 lg:py-12 lg:py-16 lg:px-8">
           <span className="eyebrow">Jak to funguje</span>
           <h2 className="mt-3 text-4xl font-black leading-tight lg:text-5xl">Od poptávky k doručení</h2>
-          <ol className="mt-14 grid gap-8 md:grid-cols-4">
+          <ol className="mt-10 grid gap-8 md:grid-cols-4">
             {steps.map((s, i) => (
               <li key={s.n} className="relative">
                 <div className="flex items-center gap-3">
@@ -243,7 +243,7 @@ function Index() {
               </li>
             ))}
           </ol>
-          <p className="mt-12 text-muted-foreground">
+          <p className="mt-8 text-muted-foreground">
             Rychlá domluva po telefonu:{" "}
             <a href={contact.phoneHref} className="font-bold text-foreground underline decoration-signal decoration-2 underline-offset-4">
               {contact.phone}

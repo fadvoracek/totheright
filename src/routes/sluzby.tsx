@@ -33,7 +33,7 @@ function ServicesPage() {
         co veze.
       </PageHero>
 
-      <div className="mx-auto max-w-7xl px-5 py-20 lg:px-8">
+      <div className="mx-auto max-w-7xl px-5 py-12 lg:py-16 lg:px-8">
         <div className="space-y-24">
           {services.map((s, i) => (
             <section
