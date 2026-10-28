@@ -63,10 +63,10 @@ function Index() {
           alt="Tmavě modrá dodávka ToTheRight na mostě nad Prahou při západu slunce"
           width={1408}
           height={768}
-          className="absolute inset-0 -z-20 h-full w-full object-cover object-[65%_center]"
+          className="block aspect-[16/10] w-full object-cover object-[70%_center] lg:absolute lg:inset-0 lg:-z-20 lg:aspect-auto lg:h-full lg:object-[65%_center]"
         />
-        <div className="bg-hero-fade absolute inset-0 -z-10" aria-hidden />
-        <div className="mx-auto flex min-h-[520px] max-w-7xl flex-col justify-center px-5 py-14 lg:py-12 lg:py-16 lg:min-h-[620px] lg:px-8">
+        <div className="bg-hero-fade absolute inset-0 -z-10 hidden lg:block" aria-hidden />
+        <div className="mx-auto flex lg:min-h-0 min-h-0 max-w-7xl flex-col justify-center px-5 py-14 lg:py-12 lg:py-16 lg:min-h-[620px] lg:px-8">
           <span className="eyebrow animate-rise">Autodoprava Praha · celá ČR</span>
           <h1 className="animate-slide-right mt-5 max-w-3xl text-5xl font-black leading-[0.98] sm:text-6xl lg:text-7xl">
             Vaše zásilky vždy <span className="text-signal">správným směrem.</span>
