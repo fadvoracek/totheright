@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight, Check } from "lucide-react";
+import { Check } from "lucide-react";
 
 import { CtaBand } from "@/components/site/CtaBand";
 import { PageHero } from "@/components/site/PageHero";
@@ -72,7 +72,7 @@ function ServicesPage() {
                 </ul>
                 <Button asChild variant="road" size="lg" className="mt-8">
                   <Link to="/kontakt">
-                    Poptat tuto službu <ArrowRight />
+                    Poptat tuto službu
                   </Link>
                 </Button>
               </div>

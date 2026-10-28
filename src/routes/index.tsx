@@ -1,6 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import {
-  ArrowRight,
   Armchair,
   Boxes,
   Clock,
@@ -12,7 +11,8 @@ import {
   Truck,
 } from "lucide-react";
 
-import hero from "@/assets/hero-van.jpg";
+import heroAsset from "@/assets/hero-van-praha.jpg.asset.json";
+const hero = heroAsset.url;
 import { CtaBand } from "@/components/site/CtaBand";
 import { Button } from "@/components/ui/button";
 import { contact, fleet, services } from "@/lib/site";
@@ -61,9 +61,9 @@ function Index() {
         <img
           src={hero}
           alt="Bílá dodávka ToTheRight na dálnici u Prahy při západu slunce"
-          width={1920}
-          height={1088}
-          className="absolute inset-0 -z-20 h-full w-full object-cover object-[70%_center]"
+          width={1408}
+          height={768}
+          className="absolute inset-0 -z-20 h-full w-full object-cover object-[65%_center]"
         />
         <div className="bg-hero-fade absolute inset-0 -z-10" aria-hidden />
         <div className="mx-auto flex min-h-[640px] max-w-7xl flex-col justify-center px-5 py-24 lg:min-h-[720px] lg:px-8">
@@ -78,7 +78,7 @@ function Index() {
           <div className="animate-rise mt-9 flex flex-wrap gap-3">
             <Button asChild variant="signal" size="xl">
               <Link to="/kontakt">
-                Nezávazná poptávka <ArrowRight />
+                Nezávazná poptávka
               </Link>
             </Button>
             <Button asChild variant="ghostLight" size="xl">
@@ -117,7 +117,7 @@ function Index() {
           </div>
           <Button asChild variant="outline" size="lg">
             <Link to="/sluzby">
-              Všechny služby <ArrowRight />
+              Všechny služby
             </Link>
           </Button>
         </div>
@@ -153,7 +153,7 @@ function Index() {
                   </div>
                   <p className="mt-3 text-muted-foreground">{s.short}</p>
                   <span className="mt-auto flex items-center gap-1 pt-5 text-sm font-bold text-primary group-hover:text-signal">
-                    Více o službě <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
+                    Více o službě
                   </span>
                 </div>
               </Link>
@@ -218,7 +218,7 @@ function Index() {
         <div className="mt-8">
           <Button asChild variant="road" size="lg">
             <Link to="/vozovy-park">
-              Parametry vozidel <ArrowRight />
+              Parametry vozidel
             </Link>
           </Button>
         </div>

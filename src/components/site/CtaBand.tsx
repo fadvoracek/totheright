@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { ArrowRight, Phone } from "lucide-react";
+import { Phone } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { contact } from "@/lib/site";
@@ -18,7 +18,7 @@ export function CtaBand() {
           <div className="flex flex-wrap gap-3">
             <Button asChild variant="signal" size="xl">
               <Link to="/kontakt">
-                Poptat přepravu <ArrowRight />
+                Poptat přepravu
               </Link>
             </Button>
             <Button asChild variant="ghostLight" size="xl">
