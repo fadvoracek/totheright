@@ -66,7 +66,7 @@ function Index() {
           className="block aspect-[16/10] w-full object-cover object-[70%_center] lg:absolute lg:inset-0 lg:-z-20 lg:aspect-auto lg:h-full lg:object-[65%_center]"
         />
         <div className="bg-hero-fade absolute inset-0 -z-10 hidden lg:block" aria-hidden />
-        <div className="mx-auto flex lg:min-h-0 min-h-0 max-w-7xl flex-col justify-center px-5 py-14 lg:py-12 lg:py-16 lg:min-h-[620px] lg:px-8">
+        <div className="mx-auto flex max-w-7xl flex-col justify-center px-5 py-10 lg:min-h-[620px] lg:py-16 lg:px-8">
           <span className="eyebrow animate-rise">Autodoprava Praha · celá ČR</span>
           <h1 className="animate-slide-right mt-5 max-w-3xl text-5xl font-black leading-[0.98] sm:text-6xl lg:text-7xl">
             Vaše zásilky vždy <span className="text-signal">správným směrem.</span>
