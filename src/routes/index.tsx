@@ -11,7 +11,7 @@ import {
   Truck,
 } from "lucide-react";
 
-import heroAsset from "@/assets/hero-van-praha.jpg.asset.json";
+import heroAsset from "@/assets/hero-van-praha-2.jpg.asset.json";
 const hero = heroAsset.url;
 import { CtaBand } from "@/components/site/CtaBand";
 import { Button } from "@/components/ui/button";
