@@ -21,6 +21,7 @@ export function SiteHeader() {
             <Link
               key={item.to}
               to={item.to}
+              activeOptions={{ exact: item.to === "/" }}
               className="text-sm font-semibold text-foreground/75 transition-colors hover:text-foreground"
               activeProps={{ className: "text-foreground underline decoration-signal decoration-2 underline-offset-8" }}
             >

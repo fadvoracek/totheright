@@ -4,7 +4,6 @@ import { Compass, Handshake, Leaf, Timer } from "lucide-react";
 import delivery from "@/assets/home-delivery.jpg";
 import { CtaBand } from "@/components/site/CtaBand";
 import { PageHero } from "@/components/site/PageHero";
-import { company } from "@/lib/site";
 
 export const Route = createFileRoute("/o-nas")({
   head: () => ({
@@ -84,22 +83,6 @@ function AboutPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-5 py-12 lg:py-16 lg:px-8">
-        <span className="eyebrow">Firemní údaje</span>
-        <dl className="mt-6 grid gap-px overflow-hidden rounded-xl border border-border bg-border sm:grid-cols-2 lg:grid-cols-4">
-          {[
-            ["Obchodní firma", company.name],
-            ["IČO", company.ico],
-            ["Sídlo", `${company.street}, ${company.district}, ${company.city}`],
-            ["Zápis v OR", company.register],
-          ].map(([k, val]) => (
-            <div key={k} className="bg-card p-6">
-              <dt className="text-xs font-bold uppercase tracking-widest text-muted-foreground">{k}</dt>
-              <dd className="mt-2 font-semibold">{val}</dd>
-            </div>
-          ))}
-        </dl>
-      </section>
 
       <CtaBand />
     </>
