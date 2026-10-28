@@ -38,7 +38,7 @@ function FleetPage() {
             key={v.name}
             className="grid overflow-hidden rounded-2xl border border-border bg-card shadow-card lg:grid-cols-[1.2fr_1fr]"
           >
-            <div className="flex items-center bg-[#e6e6e4]">
+            <div className="flex items-center bg-muted">
               <img
                 src={v.image}
                 alt={v.imageAlt}
