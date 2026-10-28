@@ -11,7 +11,7 @@ import {
   Truck,
 } from "lucide-react";
 
-import heroAsset from "@/assets/hero-van-praha.jpg.asset.json";
+import heroAsset from "@/assets/hero-van-praha-2.jpg.asset.json";
 const hero = heroAsset.url;
 import { CtaBand } from "@/components/site/CtaBand";
 import { Button } from "@/components/ui/button";
@@ -60,7 +60,7 @@ function Index() {
       <section className="relative isolate overflow-hidden bg-road text-road-foreground">
         <img
           src={hero}
-          alt="Bílá dodávka ToTheRight na dálnici u Prahy při západu slunce"
+          alt="Tmavě modrá dodávka ToTheRight na mostě nad Prahou při západu slunce"
           width={1408}
           height={768}
           className="absolute inset-0 -z-20 h-full w-full object-cover object-[65%_center]"
