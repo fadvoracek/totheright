@@ -32,37 +32,38 @@ function FleetPage() {
         Všechna vozidla řídíme s oprávněním skupiny B.
       </PageHero>
 
-      <div className="mx-auto max-w-7xl space-y-10 px-5 py-12 lg:py-16 lg:px-8">
+      <div className="mx-auto max-w-7xl px-5 py-12 lg:py-16 lg:px-8">
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {fleet.map((v) => (
           <article
             key={v.name}
-            className="grid overflow-hidden rounded-2xl border border-border bg-card shadow-card lg:grid-cols-[1.2fr_1fr]"
+            className="flex flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-card"
           >
-            <div className="flex items-center bg-muted">
+            <div className="bg-muted">
               <img
                 src={v.image}
                 alt={v.imageAlt}
                 width={1280}
                 height={800}
                 loading="lazy"
-                className="h-full w-full object-contain"
+                className="aspect-[13/8] w-full object-cover"
               />
             </div>
-            <div className="flex flex-col p-8 lg:p-10">
+            <div className="flex flex-1 flex-col p-6 lg:p-7">
               <div className="text-sm font-bold uppercase tracking-widest text-signal">{v.tagline}</div>
-              <h2 className="mt-1 text-3xl font-black lg:text-4xl">{v.name}</h2>
-              <p className="mt-4 text-muted-foreground">{v.description}</p>
+              <h2 className="mt-1 text-2xl font-black">{v.name}</h2>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{v.description}</p>
 
-              <dl className="mt-7 divide-y divide-border border-y border-border">
+              <dl className="mt-5 divide-y divide-border border-y border-border">
                 {v.specs.map((spec) => (
-                  <div key={spec.label} className="flex justify-between gap-4 py-3 text-sm">
+                  <div key={spec.label} className="flex justify-between gap-4 py-2.5 text-sm">
                     <dt className="text-muted-foreground">{spec.label}</dt>
                     <dd className="text-right font-bold">{spec.value}</dd>
                   </div>
                 ))}
               </dl>
 
-              <h3 className="mt-7 text-sm font-bold uppercase tracking-widest text-muted-foreground">
+              <h3 className="mt-5 text-xs font-bold uppercase tracking-widest text-muted-foreground">
                 Ideální pro
               </h3>
               <ul className="mt-3 grid grid-cols-2 gap-2">
@@ -75,8 +76,9 @@ function FleetPage() {
             </div>
           </article>
         ))}
+        </div>
 
-        <p className="text-sm text-muted-foreground">
+        <p className="mt-8 text-sm text-muted-foreground">
           Uvedené parametry jsou orientační. Přesné rozměry a kapacitu vám rádi potvrdíme podle konkrétní
           zakázky.
         </p>
