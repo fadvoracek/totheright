@@ -3,8 +3,12 @@ import parcelBoxes from "@/assets/parcel-boxes.jpg";
 import furniture from "@/assets/furniture.jpg";
 import pallets from "@/assets/pallets.jpg";
 import electronics from "@/assets/electronics.jpg";
-import vanPlech from "@/assets/van-plech.jpg";
-import vanPlachta from "@/assets/van-plachta.jpg";
+import vanPlechAsset from "@/assets/van-plech-real.jpg.asset.json";
+import vanSkrinAsset from "@/assets/van-skrin.jpg.asset.json";
+import vanPlachtaAsset from "@/assets/van-plachta-real.jpg.asset.json";
+const vanPlech = vanPlechAsset.url;
+const vanSkrin = vanSkrinAsset.url;
+const vanPlachta = vanPlachtaAsset.url;
 
 export const contact = {
   email: "info@totheright.cz",
@@ -97,7 +101,7 @@ export const fleet: Vehicle[] = [
     description:
       "Celokovová skříň chrání náklad před deštěm, prachem i nepovolanými zraky. Naše nejuniverzálnější vozidlo pro balíky, elektroniku i nábytek.",
     image: vanPlech,
-    imageAlt: "Bílá plechová dodávka",
+    imageAlt: "Bílá plechová dodávka Mercedes Sprinter",
     specs: [
       { label: "Kategorie", value: "do 3,5 t" },
       { label: "Ložný prostor", value: "cca 12–14 m³" },
@@ -106,12 +110,26 @@ export const fleet: Vehicle[] = [
     bestFor: ["Home delivery", "Výdejní boxy", "Elektronika", "Nábytek"],
   },
   {
+    name: "Skříňová dodávka",
+    tagline: "Největší uzavřený prostor",
+    description:
+      "Pevná hranatá skříň na podvozku nabízí rovné stěny a velký uzavřený objem. Ideální na stěhování nábytku, velké spotřebiče a objemné zásilky, které musí zůstat v suchu.",
+    image: vanSkrin,
+    imageAlt: "Bílá skříňová dodávka Mercedes Sprinter",
+    specs: [
+      { label: "Kategorie", value: "do 3,5 t" },
+      { label: "Ložný prostor", value: "cca 18–20 m³" },
+      { label: "Nakládka", value: "zadní dveře, boční dveře" },
+    ],
+    bestFor: ["Nábytek", "Elektronika", "Objemné zásilky", "Stěhování"],
+  },
+  {
     name: "Plachtová dodávka",
     tagline: "Pro objemné a paletové zboží",
     description:
       "Plachtová nástavba s rovnou ložnou plochou pojme palety i rozměrné kusy. Boční plachta se dá odhrnout, takže nakládka jde i vysokozdvižným vozíkem.",
     image: vanPlachta,
-    imageAlt: "Bílá plachtová dodávka s šedou plachtou",
+    imageAlt: "Bílá plachtová dodávka Mercedes Sprinter s šedou plachtou",
     specs: [
       { label: "Kategorie", value: "do 3,5 t" },
       { label: "Kapacita", value: "až 8–10 europalet" },
