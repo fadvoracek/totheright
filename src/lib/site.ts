@@ -140,6 +140,7 @@ export const fleet: Vehicle[] = [
 ];
 
 export const navItems = [
+  { to: "/", label: "Domů" },
   { to: "/sluzby", label: "Služby" },
   { to: "/vozovy-park", label: "Vozový park" },
   { to: "/o-nas", label: "O nás" },
