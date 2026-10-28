@@ -8,16 +8,16 @@ import { fleet } from "@/lib/site";
 export const Route = createFileRoute("/vozovy-park")({
   head: () => ({
     meta: [
-      { title: "Vozový park – plechové a plachtové dodávky | ToTheRight" },
+      { title: "Vozový park – plechové, skříňové a plachtové dodávky | ToTheRight" },
       {
         name: "description",
         content:
-          "Plechové dodávky pro balíky, elektroniku a nábytek. Plachtové dodávky pro palety a objemné zboží. Vozidla do 3,5 t.",
+          "Plechové dodávky pro balíky a elektroniku, skříňové pro nábytek a objemné zboží. Plachtové dodávky pro palety a objemné zboží. Vozidla do 3,5 t.",
       },
       { property: "og:title", content: "Vozový park ToTheRight" },
       {
         property: "og:description",
-        content: "Plechové i plachtové dodávky do 3,5 t — pro každý náklad to správné auto.",
+        content: "Plechové, skříňové i plachtové dodávky do 3,5 t — pro každý náklad to správné auto.",
       },
     ],
   }),
@@ -27,8 +27,8 @@ export const Route = createFileRoute("/vozovy-park")({
 function FleetPage() {
   return (
     <>
-      <PageHero eyebrow="Vozový park" title={<>Dvě dodávky. Řešení pro každý náklad.</>}>
-        Uzavřené plechové dodávky chrání citlivé zboží, plachtové dodávky zvládnou palety a nakládku z boku.
+      <PageHero eyebrow="Vozový park" title={<>Tři dodávky. Řešení pro každý náklad.</>}>
+        Uzavřené plechové dodávky chrání citlivé zboží, skříňové pojmou nejvíc objemu, plachtové dodávky zvládnou palety a nakládku z boku.
         Všechna vozidla řídíme s oprávněním skupiny B.
       </PageHero>
 

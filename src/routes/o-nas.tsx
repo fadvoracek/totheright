@@ -60,7 +60,7 @@ function AboutPage() {
               že přijedeme v osm, přijedeme v osm.
             </p>
             <p>
-              Jezdíme s plechovými a plachtovými dodávkami, takže zvládneme balíky na poslední míli, závozy
+              Jezdíme s plechovými, skříňovými a plachtovými dodávkami, takže zvládneme balíky na poslední míli, závozy
               výdejních boxů, stěhování nábytku, citlivou elektroniku i paletové zboží.
             </p>
           </div>

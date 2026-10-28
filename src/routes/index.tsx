@@ -30,7 +30,7 @@ export const Route = createFileRoute("/")({
       {
         property: "og:description",
         content:
-          "Plechové i plachtové dodávky pro home delivery, výdejní boxy, nábytek, elektroniku a palety.",
+          "Plechové, skříňové i plachtové dodávky pro home delivery, výdejní boxy, nábytek, elektroniku a palety.",
       },
     ],
   }),
@@ -42,7 +42,7 @@ const serviceIcons = [Home, PackageCheck, Armchair, MonitorSmartphone, Boxes];
 const reasons = [
   { icon: Clock, title: "Dochvilnost", text: "Termíny držíme. Když se něco změní, víte to od nás jako první." },
   { icon: ShieldCheck, title: "Péče o náklad", text: "Deky, popruhy, ukotvení. S vaším zbožím zacházíme jako s vlastním." },
-  { icon: Truck, title: "Správné auto", text: "Plechová dodávka na citlivé zboží, plachtová na palety a objemné kusy." },
+  { icon: Truck, title: "Správné auto", text: "Plechová na balíky, skříňová na nábytek, plachtová na palety a objemné kusy." },
   { icon: Phone, title: "Jeden kontakt", text: "Žádné call centrum. Voláte přímo nám a domluvíme se hned." },
 ];
 
@@ -72,7 +72,7 @@ function Index() {
             Vaše zásilky vždy <span className="text-signal">správným směrem.</span>
           </h1>
           <p className="animate-rise mt-6 max-w-xl text-lg leading-relaxed text-road-foreground/85">
-            Jsme ToTheRight — autodoprava s plechovými a plachtovými dodávkami. Doručujeme až domů, do
+            Jsme ToTheRight — autodoprava s plechovými, skříňovými a plachtovými dodávkami. Doručujeme až domů, do
             výdejních boxů a převážíme nábytek, elektroniku i palety.
           </p>
           <div className="animate-rise mt-9 flex flex-wrap gap-3">
@@ -94,7 +94,7 @@ function Index() {
         <div className="mx-auto grid max-w-7xl grid-cols-2 divide-border px-5 lg:grid-cols-4 lg:divide-x lg:px-8">
           {[
             ["5", "druhů přepravy"],
-            ["2", "typy dodávek"],
+            ["3", "typy dodávek"],
             ["3,5 t", "vozidla do"],
             ["ČR", "Praha i celá republika"],
           ].map(([big, small]) => (
@@ -185,9 +185,9 @@ function Index() {
       <section className="mx-auto max-w-7xl px-5 py-24 lg:px-8">
         <span className="eyebrow">Vozový park</span>
         <h2 className="mt-3 max-w-2xl text-4xl font-black leading-tight lg:text-5xl">
-          Plech, nebo plachta? Vybereme správné auto.
+          Plech, skříň, nebo plachta? Vybereme správné auto.
         </h2>
-        <div className="mt-12 grid gap-6 lg:grid-cols-2">
+        <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {fleet.map((v) => (
             <article key={v.name} className="overflow-hidden rounded-xl border border-border bg-card shadow-card">
               <div className="bg-muted">
