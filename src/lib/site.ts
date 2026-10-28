@@ -1,17 +1,10 @@
-import homeDeliveryAsset from "@/assets/home-delivery.jpg.asset.json";
-import parcelBoxesAsset from "@/assets/parcel-boxes.jpg.asset.json";
-import furnitureAsset from "@/assets/furniture.jpg.asset.json";
-import palletsAsset from "@/assets/pallets.jpg.asset.json";
-import electronicsAsset from "@/assets/electronics.jpg.asset.json";
-import vanPlechAsset from "@/assets/van-plech.jpg.asset.json";
+import homeDelivery from "@/assets/home-delivery.jpg";
+import parcelBoxes from "@/assets/parcel-boxes.jpg";
+import furniture from "@/assets/furniture.jpg";
+import pallets from "@/assets/pallets.jpg";
+import electronics from "@/assets/electronics.jpg";
+import vanPlech from "@/assets/van-plech.jpg";
 import vanPlachta from "@/assets/van-plachta.jpg";
-
-const homeDelivery = homeDeliveryAsset.url;
-const parcelBoxes = parcelBoxesAsset.url;
-const furniture = furnitureAsset.url;
-const pallets = palletsAsset.url;
-const electronics = electronicsAsset.url;
-const vanPlech = vanPlechAsset.url;
 
 export const contact = {
   email: "info@totheright.cz",
@@ -47,7 +40,7 @@ export const services: Service[] = [
     long: "Dovážíme zásilky e‑shopů i jednotlivců přímo k zákazníkům domů. Domluvíme se na čase doručení, zásilku předáme osobně a o každém kroku víte.",
     points: ["Doručení až ke dveřím", "Domluva času s příjemcem", "Potvrzení o předání"],
     image: homeDelivery,
-    imageAlt: "Pár přebírá balík u dveří bytu",
+    imageAlt: "Kurýr předává balík zákaznici u dveří rodinného domu",
   },
   {
     slug: "vydejni-boxy",
@@ -56,7 +49,7 @@ export const services: Service[] = [
     long: "Zásobujeme výdejní boxy a výdejní místa na pravidelných trasách. Držíme se časového plánu, aby zákazníci měli zásilky připravené včas.",
     points: ["Pravidelné trasy", "Spolehlivé časy závozu", "Praha a okolí i celá ČR"],
     image: parcelBoxes,
-    imageAlt: "Výdejní box na zásilky u řady obchodů",
+    imageAlt: "Kurýr vkládá balík do výdejního boxu",
   },
   {
     slug: "nabytek",
@@ -65,7 +58,7 @@ export const services: Service[] = [
     long: "Nábytek převážíme v uzavřených dodávkách, chráníme ho dekami a fixačními popruhy. Vyneseme ho až na místo, kam potřebujete.",
     points: ["Ochranné deky a popruhy", "Vynáška do patra", "Šetrná manipulace"],
     image: furniture,
-    imageAlt: "Stěhováci vykládají nábytek z nákladního auta",
+    imageAlt: "Dva pracovníci nakládají zabalenou sedačku do dodávky",
   },
   {
     slug: "elektronika",
@@ -74,7 +67,7 @@ export const services: Service[] = [
     long: "Elektronika patří do uzavřeného a suchého prostoru. Převážíme ji v plechových dodávkách, správně ukotvenou a bez zbytečného překládání.",
     points: ["Uzavřený a suchý prostor", "Správné ukotvení", "Velké spotřebiče i TV"],
     image: electronics,
-    imageAlt: "Krabice se zbožím naskládané v ložném prostoru dodávky",
+    imageAlt: "Televize, pračka a lednice upevněné popruhy v dodávce",
   },
   {
     slug: "paletove-zbozi",
@@ -83,7 +76,7 @@ export const services: Service[] = [
     long: "Paletové zboží nakládáme do plachtových dodávek, které jdou naložit zezadu i z boku. Ideální pro zásobování skladů, prodejen a staveb.",
     points: ["Europalety i atypické palety", "Nakládka zezadu i z boku", "Závozy skladů a prodejen"],
     image: pallets,
-    imageAlt: "Vysokozdvižný vozík nakládá palety se zbožím",
+    imageAlt: "Pracovník nakládá paletu s paletovým vozíkem do plachtové dodávky",
   },
 ];
 
@@ -104,7 +97,7 @@ export const fleet: Vehicle[] = [
     description:
       "Celokovová skříň chrání náklad před deštěm, prachem i nepovolanými zraky. Naše nejuniverzálnější vozidlo pro balíky, elektroniku i nábytek.",
     image: vanPlech,
-    imageAlt: "Bílá plechová dodávka Ford Transit u silnice",
+    imageAlt: "Bílá plechová dodávka",
     specs: [
       { label: "Kategorie", value: "do 3,5 t" },
       { label: "Ložný prostor", value: "cca 12–14 m³" },

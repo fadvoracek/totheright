@@ -18,7 +18,7 @@ const buttonVariants = cva(
         link: "text-primary underline-offset-4 hover:underline",
         signal:
           "bg-signal text-signal-foreground font-bold shadow-signal hover:brightness-110 hover:translate-x-0.5 transition-all",
-        road: "bg-road text-road-foreground font-semibold hover:bg-road/85",
+        road: "bg-road text-road-foreground font-semibold hover:bg-primary",
         ghostLight:
           "border border-road-foreground/30 text-road-foreground font-semibold hover:bg-road-foreground/10",
       },
