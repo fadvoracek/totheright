@@ -6,7 +6,7 @@ import { contact } from "@/lib/site";
 
 export function CtaBand() {
   return (
-    <section className="px-5 py-20 lg:px-8">
+    <section className="px-5 py-12 lg:py-16 lg:px-8">
       <div className="bg-road-texture relative mx-auto max-w-7xl overflow-hidden rounded-2xl px-8 py-14 text-road-foreground lg:px-16">
         <div className="relative z-10 flex flex-col items-start justify-between gap-8 lg:flex-row lg:items-center">
           <div>

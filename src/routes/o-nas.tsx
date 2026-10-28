@@ -40,7 +40,7 @@ function AboutPage() {
         dodávkami — pro e‑shopy, obchody, firmy i domácnosti.
       </PageHero>
 
-      <section className="mx-auto grid max-w-7xl items-center gap-12 px-5 py-20 lg:grid-cols-2 lg:px-8">
+      <section className="mx-auto grid max-w-7xl items-center gap-12 px-5 py-12 lg:py-16 lg:grid-cols-2 lg:px-8">
         <img
           src={delivery}
           alt="Řidič ToTheRight předává zásilku zákaznici"
@@ -68,7 +68,7 @@ function AboutPage() {
       </section>
 
       <section className="border-y border-border bg-card">
-        <div className="mx-auto max-w-7xl px-5 py-20 lg:px-8">
+        <div className="mx-auto max-w-7xl px-5 py-12 lg:py-16 lg:px-8">
           <span className="eyebrow">Na čem stavíme</span>
           <div className="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
             {values.map((v) => (
@@ -84,7 +84,7 @@ function AboutPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-5 py-20 lg:px-8">
+      <section className="mx-auto max-w-7xl px-5 py-12 lg:py-16 lg:px-8">
         <span className="eyebrow">Firemní údaje</span>
         <dl className="mt-6 grid gap-px overflow-hidden rounded-xl border border-border bg-border sm:grid-cols-2 lg:grid-cols-4">
           {[

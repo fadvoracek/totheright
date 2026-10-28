@@ -30,7 +30,7 @@ function ContactPage() {
         Vyplňte krátký formulář nebo zavolejte. Ozveme se s cenou a termínem co nejdříve.
       </PageHero>
 
-      <section className="mx-auto grid max-w-7xl gap-10 px-5 py-20 lg:grid-cols-[1fr_1.5fr] lg:px-8">
+      <section className="mx-auto grid max-w-7xl gap-10 px-5 py-12 lg:py-16 lg:grid-cols-[1fr_1.5fr] lg:px-8">
         <div className="space-y-6">
           <a
             href={contact.phoneHref}

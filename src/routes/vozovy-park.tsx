@@ -32,20 +32,20 @@ function FleetPage() {
         Všechna vozidla řídíme s oprávněním skupiny B.
       </PageHero>
 
-      <div className="mx-auto max-w-7xl space-y-10 px-5 py-20 lg:px-8">
+      <div className="mx-auto max-w-7xl space-y-10 px-5 py-12 lg:py-16 lg:px-8">
         {fleet.map((v) => (
           <article
             key={v.name}
             className="grid overflow-hidden rounded-2xl border border-border bg-card shadow-card lg:grid-cols-[1.2fr_1fr]"
           >
-            <div className="bg-muted">
+            <div className="flex items-center bg-muted">
               <img
                 src={v.image}
                 alt={v.imageAlt}
                 width={1280}
                 height={800}
                 loading="lazy"
-                className="h-full w-full object-cover"
+                className="h-full w-full object-contain"
               />
             </div>
             <div className="flex flex-col p-8 lg:p-10">
