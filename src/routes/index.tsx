@@ -63,11 +63,11 @@ function Index() {
           alt="Tmavě modrá dodávka ToTheRight na mostě nad Prahou při západu slunce"
           width={1408}
           height={768}
-          className="absolute inset-x-0 top-0 -z-20 h-[380px] w-full object-cover object-[80%_center] sm:h-[460px] lg:inset-0 lg:h-full lg:object-[65%_center]"
+          className="absolute inset-x-0 top-0 -z-20 h-[370px] w-full object-cover object-[80%_center] sm:h-[460px] lg:inset-0 lg:h-full lg:object-[65%_center]"
         />
-        <div className="bg-hero-fade-mobile absolute inset-x-0 top-0 -z-10 h-[380px] sm:h-[460px] lg:hidden" aria-hidden />
+        <div className="bg-hero-fade-mobile absolute inset-x-0 top-0 -z-10 h-[370px] sm:h-[460px] lg:hidden" aria-hidden />
         <div className="bg-hero-fade absolute inset-0 -z-10 hidden lg:block" aria-hidden />
-        <div className="mx-auto flex max-w-7xl flex-col justify-center px-5 pb-12 pt-[290px] sm:pt-[370px] lg:min-h-[620px] lg:py-16 lg:px-8">
+        <div className="mx-auto flex max-w-7xl flex-col justify-center px-5 pb-12 pt-[310px] sm:pt-[370px] lg:min-h-[620px] lg:py-16 lg:px-8">
           <span className="eyebrow animate-rise">Autodoprava Praha · celá ČR</span>
           <h1 className="animate-slide-right mt-4 max-w-3xl text-[2.6rem] font-black leading-[0.98] sm:text-6xl lg:text-7xl">
             Vaše zásilky vždy <span className="text-signal">správným směrem.</span>
