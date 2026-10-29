@@ -8,7 +8,7 @@ import { company, contact } from "@/lib/site";
 export const Route = createFileRoute("/kontakt")({
   head: () => ({
     meta: [
-      { title: "Kontakt a poptávka přepravy | ToTheRight s.r.o." },
+      { title: "ToTheRight s.r.o." },
       {
         name: "description",
         content: `Poptejte přepravu u ToTheRight: ${contact.phone}, ${contact.email}. Sídlo ${company.street}, Praha 8.`,
