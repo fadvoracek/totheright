@@ -9,7 +9,7 @@ import { services } from "@/lib/site";
 export const Route = createFileRoute("/sluzby")({
   head: () => ({
     meta: [
-      { title: "Služby – home delivery, výdejní boxy, nábytek, palety | ToTheRight" },
+      { title: "ToTheRight s.r.o." },
       {
         name: "description",
         content:

@@ -20,7 +20,7 @@ import { contact, fleet, services } from "@/lib/site";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "ToTheRight – autodoprava, home delivery a přeprava palet | Praha" },
+      { title: "ToTheRight s.r.o." },
       {
         name: "description",
         content:

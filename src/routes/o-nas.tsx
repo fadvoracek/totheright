@@ -8,7 +8,7 @@ import { PageHero } from "@/components/site/PageHero";
 export const Route = createFileRoute("/o-nas")({
   head: () => ({
     meta: [
-      { title: "O nás – autodoprava ToTheRight s.r.o. z Prahy" },
+      { title: "ToTheRight s.r.o." },
       {
         name: "description",
         content:

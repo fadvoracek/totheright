@@ -81,7 +81,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "ToTheRight s.r.o. – autodoprava dodávkami" },
+      { title: "ToTheRight s.r.o." },
       {
         name: "description",
         content:

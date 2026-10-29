@@ -8,7 +8,7 @@ import { fleet } from "@/lib/site";
 export const Route = createFileRoute("/vozovy-park")({
   head: () => ({
     meta: [
-      { title: "Vozový park – plechové, skříňové a plachtové dodávky | ToTheRight" },
+      { title: "ToTheRight s.r.o." },
       {
         name: "description",
         content:
